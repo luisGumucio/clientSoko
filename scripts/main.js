@@ -58,7 +58,7 @@ sokobanApp.controller('gameCrtl', function ($scope, $cookies, $window, $http) {
     }
 
     $scope.saveHistory = function (item) {
-        $http.post('http://sokobanservice.esy.es/index.php/UserSokon/saveHistory', JSON.stringify(item), {
+        $http.post('http://sokobanservice.esy.es/index.php/ProfileController/saveHistory', JSON.stringify(item), {
             headers: {
                 'Content-Type': 'application/json', /*or whatever type is relevant */
             }
