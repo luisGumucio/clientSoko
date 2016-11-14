@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html ng-app="sokobanApp">
+
+<head>
+    <title>Sokoban</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <base href="#login" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/Scores.css" rel="stylesheet" />
+    <link href="css/gameContainer.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style1.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <!-- only js -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-cookies.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <!-- game -->
+    <script src="scripts/Position.js"></script>
+    <script src="scripts/FixedObject.js"></script>
+    <script src="scripts/WildCard.js"></script>
+    <script src="scripts/Wall.js"></script>
+    <script src="scripts/Destination.js"></script>
+    <script src="scripts/MovableObject.js"></script>
+    <script src="scripts/Box.js"></script>
+    <script src="scripts/Player.js"></script>
+    <script src="scripts/Cell.js"></script>
+    <script src="scripts/Board.js"></script>
+    <script src="scripts/Level.js"></script>
+    <!-- config -->
+    <script src="scripts/game/Timer.js"></script>
+    <script src="scripts/game/GameView.js"></script>
+    <script src="scripts/game/setupGame.js"></script>
+    <script src="scripts/mainController.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="logo">
+                <img src="img/rule01.gif" />
+                <h1><a href="#">Sokoban</a></h1>
+            </div>
+            <div class="footer">
+                <small>© Copyright 2016, luis gumucio </small>
+            </div>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <div class="contenedor" id="one">
+                    <img class="icon" src="img/home.png">
+                    <a href="#/" class="texto">Home</a>
+                </div>
+                <div class="contenedor" id="two">
+                    <img class="icon" src="img/profile.png">
+                    <a href="#/profile" class="texto">Profile</a>
+                </div>
+                <div class="contenedor" id="three">
+                    <img class="icon" src="img/leaderimg.png">
+                    <a href="#/leader" class="texto">Leader</a>
+                </div>
+                <div class="contenedor contenedor1" id="four">
+                    <img class="icon" src="img/login.jpg">
+                    <a href="#information" class="texto">Information</a>
+                </div>
+                <div class="contenedor" id="five">
+                    <img class="icon" src="img/about.png">
+                    <a href="#/about" class="texto">About</a>
+                </div>
+            </div>
+            <div ng-view class="gameBoard"></div>
+            <div class="levels">
+                <div class="checkout-wrap">
+                    <ul class="checkout-bar">
+                        <li class="active" id="levelGame1"></li>
+                        <li class="active" id="levelGame2"></li>
+                        <li class="active" id="levelGame3"></li>
+                        <li class="active" id="levelGame4"></li>
+                        <li class="active" id="levelGame5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
